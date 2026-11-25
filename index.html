@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ziah Cunningham — Front-End Engineer</title>
+    <meta
+      name="description"
+      content="Ziah Cunningham is a front-end focused full stack engineer who designs in Figma and builds in React."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <a class="nav__logo" href="#top">ZC</a>
+      <nav class="nav__links" aria-label="Main">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a class="nav__resume" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <p class="eyebrow">Front-end focused full stack engineer</p>
+        <h1 class="hero__title">
+          I design in Figma and build it in <span class="accent">React</span>.
+        </h1>
+        <p class="hero__lead">
+          I'm Ziah, a TripleTen-trained engineer in Escondido, CA. I care about
+          clean, intentional interfaces that work on every screen, and I bring
+          5+ years of customer-facing experience to the people I build for.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#work">See my work</a>
+          <a class="btn" href="mailto:ziahcse@gmail.com">Get in touch</a>
+        </div>
+      </section>
+
+      <section class="work" id="work">
+        <h2 class="section-title">Selected work</h2>
+
+        <article class="project">
+          <div class="project__media project__media--wtwr">
+            <img src="images/wtwr.png" alt="WTWR app showing today's weather and outfit suggestions" onerror="this.remove()" />
+            <span class="project__fallback">WTWR</span>
+          </div>
+          <div class="project__body">
+            <p class="project__kind">Full stack application</p>
+            <h3 class="project__title">WTWR — "What to Wear"</h3>
+            <p>
+              A clothing app that checks the weather where you are and suggests
+              what to wear. Users sign up, add their own garments, tag them by
+              weather, and like items.
+            </p>
+            <ul class="project__points">
+              <li>Uses the browser's location to fetch live local weather, with a safe fallback.</li>
+              <li>REST API built with Node.js, Express, and MongoDB, with JWT authentication.</li>
+              <li>Previously self-hosted on a Google Cloud VM with nginx, SSL, and a custom domain.</li>
+            </ul>
+            <ul class="tags">
+              <li>React</li><li>Node.js</li><li>Express</li><li>MongoDB</li><li>JWT</li>
+            </ul>
+            <div class="project__links">
+              <a href="https://zyborgg.github.io/se_project_react/" target="_blank" rel="noopener">Live app</a>
+              <a href="https://github.com/zyborgg/se_project_react" target="_blank" rel="noopener">Front-end code</a>
+              <a href="https://github.com/zyborgg/se_project_express" target="_blank" rel="noopener">Back-end code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project__media project__media--news">
+            <img src="images/newsexplorer.png" alt="NewsExplorer search results" onerror="this.remove()" />
+            <span class="project__fallback">NewsExplorer</span>
+          </div>
+          <div class="project__body">
+            <p class="project__kind">Front-end React application</p>
+            <h3 class="project__title">NewsExplorer</h3>
+            <p>
+              Search news from a third-party API, then save and manage the
+              articles you care about. I designed it in Figma first, then
+              translated the mockups into reusable React components.
+            </p>
+            <ul class="project__points">
+              <li>Designed the full UI in Figma before writing code.</li>
+              <li>Modal-based sign-in flow for an app-like experience.</li>
+              <li>Adaptive layouts from phone to desktop.</li>
+            </ul>
+            <ul class="tags">
+              <li>React</li><li>Figma</li><li>CSS</li><li>REST APIs</li>
+            </ul>
+            <div class="project__links">
+              <a href="https://zyborgg.github.io/se_final_project_frontend/" target="_blank" rel="noopener">Live app</a>
+              <a href="https://github.com/zyborgg/se_final_project_frontend" target="_blank" rel="noopener">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project__media project__media--spots">
+            <img src="images/spots.png" alt="Spots photo grid" onerror="this.remove()" />
+            <span class="project__fallback">Spots</span>
+          </div>
+          <div class="project__body">
+            <p class="project__kind">Responsive web app</p>
+            <h3 class="project__title">Spots</h3>
+            <p>
+              A photo-sharing app in the style of Instagram and Pinterest, built
+              with plain HTML, CSS, and JavaScript to get the fundamentals right.
+            </p>
+            <ul class="project__points">
+              <li>Responsive grid that adapts across screen sizes.</li>
+              <li>Simulated sign-in and sign-out flow.</li>
+            </ul>
+            <ul class="tags">
+              <li>JavaScript</li><li>HTML</li><li>CSS</li>
+            </ul>
+            <div class="project__links">
+              <a href="https://zyborgg.github.io/se_project_spots/" target="_blank" rel="noopener">Live app</a>
+              <a href="https://github.com/zyborgg/se_project_spots" target="_blank" rel="noopener">Code</a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="about" id="about">
+        <h2 class="section-title">About</h2>
+        <div class="about__grid">
+          <div class="about__text">
+            <p>
+              I came to software from a creative, artistic background and years
+              of working directly with customers in sales and service. That mix
+              shapes how I build: I start with the person using the screen, sketch
+              it in Figma, then make it real in code.
+            </p>
+            <p>
+              I finished TripleTen's 600+ hour full stack program in August 2026,
+              and I keep learning through weekly stack calls with other developers.
+              I'm looking for front-end, UI, or full stack roles where design and
+              engineering meet.
+            </p>
+          </div>
+          <div class="skills">
+            <h3>Build</h3>
+            <p>JavaScript (ES6+), React, HTML, CSS, Node.js, Express</p>
+            <h3>Data &amp; tools</h3>
+            <p>MongoDB, Mongoose, REST APIs, JWT auth, Git/GitHub, Postman</p>
+            <h3>Design</h3>
+            <p>Figma, responsive and adaptive layouts, UI/UX design</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <h2 class="contact__title">Let's build something.</h2>
+        <p>I'm open to remote front-end, UI, and full stack roles.</p>
+        <a class="contact__email" href="mailto:ziahcse@gmail.com">ziahcse@gmail.com</a>
+        <div class="contact__links">
+          <a href="https://github.com/zyborgg" target="_blank" rel="noopener">GitHub</a>
+          <a href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year">2026</span> Ziah Cunningham · Designed and built by me</p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
